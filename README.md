@@ -1,54 +1,87 @@
-# Transactional Web Applications - Project
+# Project Final Report (E-commerce Website)
 
-This template repository is the starter project for Transactional Web App. project. Written in HTML/CSS/JavaScript/React.js/Node.js/Express.js.
+## Aim
+To develop an e-commerce platform for selling trendy Men fashion products.
 
-## Deliverables
+## Description
+Our e-commerce platform, "Ebra", provides users with a wide range of men's clothing products, from hats to shoes. The platform aims to make fashion shopping easy, fun, and accessible.
 
-### Deliverable 0
+## Functional and Non-Functional Requirements
 
-The holistic learning of the course will be evaluated through the term project in which a team of 2-3 students should design and implement a e-commerce website from scratch.
+### Functional Requirements
+- Users must be able to register and log in.
+- Users should be able to browse products.
+- A search functionality should be present to find products.
+- Users should be able to filter the products by favorites.
+- Users should be able to add products to the cart and proceed to checkout.
+- Users should be able to add products to Wishlist.
+- Payment gateway integration for processing payments.
 
-At the end of the term, each team needs to submit a project report, present their ideas and also demonstrate the app to the teacher/class. A team of three students (max) would be considered a team. There will be three deliverables.
+### Non-Functional Requirements
+- The website should load within 3 seconds.
+- The website should be represented in English and French.
+- It should be mobile-responsive.
+- The system should be able to handle up to 10,000 concurrent users.
+- Data backups should occur daily.
+- System uptime of 99.9%.
 
-Team members present their e-commerce idea (PowerPoint) and design the prototype of the application.
+## User Stories
 
-The PowerPoint presents the title of the project, team members, description of the project, chosen database, presenting GitHub link, and mock-up that depicts the entire navigation of the website.
+- **Browse Products:**  
+  As a user, I want to browse products and filter them by favorites so that I can quickly find what I am looking for.
 
-For this deliverable, you have the following tasks **(5%)**:
+- **Search for a Product:**  
+  As a user, I want to search for a specific product so that I can find it without browsing through multiple pages.
 
-• Project Description – 2%  
-• Mock-up design – 3%
+- **Add to Cart:**  
+  As a user, I want to add products to my cart so that I can purchase multiple items at once.
 
-You could use tools like [Moqups](https://moqups.com/) or [Figma](https://www.figma.com/) for making the mock-up design and wiring.
+- **Add to Wishlist:**  
+  As a user, I want to add products to my Wishlist so that I can save my items for later.
 
-### Deliverable 1
+- **Checkout:**  
+  As a user, I want to be able to securely check out and make a payment so I can receive my ordered products.
 
-For this deliverable, you have the following tasks based on your course outline **(15%)**:
+## Test Cases
 
-• UI Interface (material design, activity flow) – 3%  
-• Database connection & CRUD operations – 3%  
-• API calls (JSON, Async, Threading) – 3%  
-• Hosting (on an AWS server) - 3%  
-• Using an issue-tracking software - 3%
+- **User Registration:**  
+  Input: Valid email and password.  
+  Expected Output: Successful registration and redirection to the login page.  
+  Actual Output: Registration successful, user redirected to the login page.
 
-Also, include a document explaining task distribution between team members.
+- **Add Product to Cart:**  
+  Input: Click "Add to Cart" on a product.  
+  Expected Output: The product is added to the cart, and the cart count increases by 1.  
+  Actual Output: Product added, cart count increased.
 
-### Deliverable 2
+- **User Login:**  
+  Input: Valid email and password.  
+  Expected Output: Successful login and redirection to the homepage.  
+  Actual Output: Login successful, user redirected to homepage.
 
-For this deliverable, you have the following tasks based on your course outline **(15%)**:
+- **Admin Panel:**  
+  Input: Path /admin.  
+  Expected Output: Only signed-in admin users should access this endpoint.  
+  Actual Output: Authorization checked of the signed-in user if admin → get page / else to redirect to the homepage.
 
-• Completed UI interface (Entire Navigation) – 4%  
-• Authentication (Email, SMS, call) – 4%  
-• Internationalization and localization - 3%  
-• Using CI/CD tools - 4%
+## Individual’s Role and Responsibilities
 
-Final report: **(5%)**  
-• Project Aim and description  
-• Functional and non-functional requirements  
-• User stories  
-• Test cases  
-• Individual’s role and responsibilities
+### Wei Jin
+- Developed the database schema.
+- Internationalization and localization.
+- Admin Panel.
+- API CRUD Operations.
 
-Also, include a document explaining task distribution between team members.
+### Malek Kazal
+- Designed the UI/UX of the website.
+- Stripe Integration / Checkout Logic.
+- Firestore configuration / Integration.
+- AWS Hosting.
+- Full Routing.
+- Authorization.
 
-You can include everything except the "node_modules" folder so it fits within the limits for uploading.
+### Sean Burke
+- Firebase Signup/Login.
+- Authentication.
+- Single Product Component.
+- Code Refactoring.
